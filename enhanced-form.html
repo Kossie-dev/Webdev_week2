@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Form</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Enhanced HTML5 Form</h1>
+        </header>
+        <main>
+            <section>
+                <h2>About This Page</h2>
+                <p>This page demonstrates various features of HTML5, creating a robust and accessible form structure. Showcasing:</p>
+                <ul>
+                    <li>Examples of lists:
+                        <ol>
+                            <li>Ordered</li>
+                            <li>Unordered</li>
+                        </ol>
+                    </li>
+                    <li>Well-structured content using HTML5 tags.</li>
+                    <li>A simple table for tabular data.</li>
+                    <li>Integration of media:
+                        <ol type="i">
+                            <li>Image</li>
+                            <li>Audio</li>
+                            <li>Video</li>
+                        </ol>
+                    </li>
+                    <li>Correct application of form attributes like:
+                        <ol type="a">
+                            <li>'placeholder'</li>
+                            <li>'required'</li>
+                        </ol>
+                    </li>
+                    <li>A comprehensive HTML5 form with diverse input types.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Tables</h2>
+                <table border="1">
+                    <caption>Information Table</caption>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Country</th>
+                            <th>Profession</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Yolanda</td>
+                            <td>Italy</td>
+                            <td>Culinary chef</td>
+                        </tr>
+                        <tr>
+                            <td>Jean</td>
+                            <td>France</td>
+                            <td>Patissier</td>
+                        </tr>
+                        <tr>
+                            <td>Kavin</td>
+                            <td>Rwanda</td>
+                            <td>Sous chef</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section>
+                <h2>Multimedia</h2>
+                    <h3>Image</h3>
+                    <img src="Deli cuisine.jpg" alt="A cuisine of healthy ingredients" width="560" height="560">
+                    <h3>Audio</h3>
+                    <audio controls autoplay>
+                        <source src="Piano Music.mp3" type="audio/mp3">
+                        Your browser does not support the audio element
+                    </audio>
+                    <h3>Video</h3>
+                    <video controls width="640" height="360" >
+                        <source src="Cooking video.mp4" type="video/mp4">
+                        Cooking video showing behind the scenes of tasty dishes
+                    </video>
+            </section>
+            <section>
+                <h2>User Registration Form</h2>
+                <form action="submit" method="post">
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name" placeholder="Your name"required>
+                    <br>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com"required>
+                    <br><br>
+                    <label for="age-group">Age group: </label><br>
+                    <label for="child">Child [0-12]</label>
+                    <input type="radio" id="child" name="age-group" value="child" required><br>
+                    <label for="adolescent">Adolescent [12-18]</label>
+                    <input type="radio" id="adolescent" name="age-group" value="adolescent" required><br>
+                    <label for="adult">Adult [18-45]</label>
+                    <input type="radio" id="adult" name="age-group" value="adult" required><br>
+                    <label for="older">Older [45-65]</label>
+                    <input type="radio" id="older" name="age-group" value="older" required><br>
+                    <label for="elderly">Elderly [65-100]</label>
+                    <input type="radio" id="elderly" name="age-group" value="elderly" required><br><br>
+                    <label for="password">Password: </label>
+                    <input type="password" id="password" name="password" minlength="8" maxlength="20"><br><br> 
+                    <label for="region">Region: </label>
+                    <select id="region" name="region">
+                        <option value="North America">North America</option>
+                        <option value="Africa">Africa</option>
+                        <option value="Asia">Asia</option>
+                        <option value="Europe">Europe</option>
+                        <option value="South America">South America</option>
+                        <option value="Australia">Australia</option>
+                    </select><br><br>
+                    <label for="suggestions">Place suggestions here:</label><br>
+                    <textarea id="suggestions" name="suggestions" rows="4" cols="50" placeholder="Place your suggestions here: "></textarea><br>
+                    <button type="submit">Submit</button><br>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 Enhanced HTML5 Form. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
